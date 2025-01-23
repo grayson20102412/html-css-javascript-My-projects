@@ -1,16 +1,16 @@
 const image = document.getElementById('interactiveImage');
 let scale = 1;
 
-// Event listener untuk mengganti warna berdasarkan ukuran gambar
+// to change the color based on image size
 image.addEventListener('wheel', (event) => {
   event.preventDefault();
 
-  // Zoom in atau out berdasarkan scroll
+  // Zoom in atau out based on Scroll
   if (event.deltaY < 0) {
     scale += 0.1; // Perbesar
   } else {
     scale -= 0.1; // Perkecil
-    if (scale < 0.5) scale = 0.5; // Batas minimum zoom
+    if (scale < 0.5) scale = 0.5; //  minimum zoom
   }
 
   // Terapkan transformasi dan filter warna berdasarkan ukuran
