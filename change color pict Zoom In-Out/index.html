@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Color Change</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Change Color</h1>
+    <p>use your mouse wheel to zoom in or out the image. The color will change based on the size.</p>
+    <div class="image-container">
+      <picture>
+        <source media="(max-width:500px)" srcset="color1.png">
+        <source media="(max-width:1000px)" srcset="color2.png">
+        <source media="(max-width:1500px)" srcset="color3.png">
+        <img id="interactiveImage" src="color4.png" alt="Rony Grayson Simanjuntak" style="width:250px; height:250px;">
+    </picture>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
